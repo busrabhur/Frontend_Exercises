@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imgbox {
+    width: 20%;
+    height: 250px;
+    border: 1px solid rebeccapurple;
+    float: left;
+    padding: 16px;
+    margin: 4px;
+    overflow: hidden;
+}
+
+.imgbox img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ 
+    </style>
+</head>
+<body>
+    <div class="imgbox" id="imgbox1"> resim1 <br>
+        <img  src="1.jpg" style="width:100%;height: 180px;" >
+        <button onclick="removeelement()">kaldır</button>
+    </div>
+
+    <div class="imgbox" id="imgbox2"> resim2 <br>
+        <img src="2.jpg"style="width:100%;">
+        <button onclick="changevisibility()">gizle</button>
+    </div>
+
+    <div class="imgbox" id="imgbox3" >resim3 <br>
+        <img src="3.jpg" style="width:100%;">
+        <button onclick="resetElement()">resetle</button>
+    </div>
+
+    1.de display none kullanıldı gizleyince yeri de kayboluyor
+    2.de visibility:hidden kullanıldı elementi gizleyince yeri hala duruyor boş şekilde
+    3.de gizledikleirmizi tekrar ortaya çıkarmayı öğrendik.
+
+
+    <script>
+
+        function removeelement(){
+            document.getElementById("imgbox1").style.display="none";
+        }
+        function changevisibility(){
+            document.getElementById("imgbox2").style.visibility="hidden";
+        }
+        function resetElement(){
+            document.getElementById("imgbox1").style.display=" block";
+            document.getElementById("imgbox2").style.visibility="visible";
+        }
+
+    </script>
+</body>
+</html>

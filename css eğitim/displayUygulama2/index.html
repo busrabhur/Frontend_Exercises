@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <style>
+        p,#text{
+            background-color:hotpink;
+            border:1px solid purple;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #text{
+            display: none;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!--- "onclick özelliği" - tıklandığında çalışacak fonksiyonu bildirir.-->
+    <p onclick="goster()"></i><i class="fas fa-heart"></i>Paneli göster</p>
+    <div id="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quo vitae eius quas, dolores soluta. Eligendi voluptatem cum molestias nostrum, sint adipisci minima quia ex nulla eos minus enim similique, itaque iste dolore. Autem maxime, omnis delectus itaque reiciendis, similique dolorem dolorum est cupiditate a quo provident quisquam unde excepturi error praesentium et vitae exercitationem eius sapiente ullam voluptas! Sunt facilis molestias cupiditate? Numquam, ullam sint magnam debitis sunt blanditiis! Officia dolor sit accusantium vitae maxime eos dolorem quisquam, rerum obcaecati id voluptatibus beatae! Quia id amet doloremque illo mollitia inventore odit, facilis quasi, quidem dicta cupiditate facere veritatis eaque error laudantium ea aut voluptate. Quidem eaque omnis nulla earum, culpa quam corrupti mollitia iusto accusantium, non fugiat nisi, labore velit nobis quod cum a ratione quo officia ullam? Facere, impedit sequi laboriosam saepe distinctio odit doloribus magnam possimus necessitatibus aut mollitia magni, officiis molestiae nisi doloremque deserunt? Maxime, ad.
+    </div>
+
+    <script>
+        function goster(){
+            document.getElementById("text").style.display="block";
+        }
+    </script>
+</body>
+</html>

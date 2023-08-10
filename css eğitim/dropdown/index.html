@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            float: left;
+        }
+        ul{
+            list-style-type: none;
+            background-color: lightgreen;
+            overflow:auto;
+        }
+        li a{ /*li nin içindeki a ları stillendirir.*/
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            padding:15px ;
+        }
+        .dropbtn{
+            background-color: burlywood;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="news">News</a></li>
+        <li class="Dropdown"><a class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="#">Link1</a>
+                <a href="#">Link2</a>
+                <a href="#">Link3</a>
+            </div>
+        </li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 1px solid blue;
+        }
+        p::first-line{
+            background-color: lightcoral;
+        }
+        p::first-letter{
+            font-size: xx-large;
+        }
+
+        p.xyz::first-line{
+            font-size: larger;
+            color: blue;
+        }
+
+        p.xyz::selection{ /*p etiketlerinden xyz classına sahip olanların yazıları mouse ile seçilirse*/
+            background-color: lightgreen;
+            color: rgb(146, 81, 91);
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vero ut ullam, ea unde eligendi provident dolor quae voluptates, laborum doloribus rerum voluptatum nisi, sunt accusamus est enim. Error hic fugit amet, architecto eveniet natus exercitationem quos accusantium quas iusto consectetur pariatur cupiditate sequi eligendi nobis dolorem officia veritatis molestiae laudantium deleniti nisi ipsum corrupti laborum nulla. Hic, accusantium exercitationem soluta dolorem nam odit quo nesciunt est recusandae impedit iusto nostrum a sed reiciendis id libero laborum, delectus error iste cumque? Culpa consequatur doloribus, magnam impedit voluptates pariatur quasi ipsa, incidunt laudantium dolorem modi nobis? Accusamus voluptatem quis ut alias.</p>
+
+    <p class="xyz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vero ut ullam, ea unde eligendi provident dolor quae voluptates, laborum doloribus rerum voluptatum nisi, sunt accusamus est enim. Error hic fugit amet, architecto eveniet natus exercitationem quos accusantium quas iusto consectetur pariatur cupiditate sequi eligendi nobis dolorem officia veritatis molestiae laudantium deleniti nisi ipsum corrupti laborum nulla. Hic, accusantium exercitationem soluta dolorem nam odit quo nesciunt est recusandae impedit iusto nostrum a sed reiciendis id libero laborum, delectus error iste cumque? Culpa consequatur doloribus, magnam impedit voluptates pariatur quasi ipsa, incidunt laudantium dolorem modi nobis? Accusamus voluptatem quis ut alias.</p>
+
+</body>
+</html>

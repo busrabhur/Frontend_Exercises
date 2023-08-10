@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .header{
+            background-color:lightgray ;
+            padding: 25px;
+            text-align: center;
+        }
+        .nav{
+            background-color: black;
+            overflow: hidden; /*navbarda genelde kullanılır.*/
+        }
+
+        .nav a{
+            padding: 15px 17px;
+            float: left;
+            text-decoration: none;     /*linklerin altındaki çizgiyi kaldırır*/
+            color:white;
+            
+        }
+        ::selection{
+            background-color: cadetblue;
+        }
+        .nav a:hover{
+            background-color: lightgrey;
+            
+        }
+        .column{
+            float: left;
+            padding: 15px;
+        }
+        .sidebar{
+            width: 25%;
+        }
+        .main{
+            width: 50%;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .row::after{ /*sayfanın ortasındaki row classlı genel divde float kullandığımız için sonrasında temizlik yapmamız lazım.Bu temizliği sağlar.Floatın oluşturacağı etkiden bi sonraki etiketi korur.*/
+            content: "";
+            display: table;
+            clear: both;
+        } 
+
+        .footer{
+            background-color: lightgrey;
+            padding: 15px 12px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) { /*600 px in altına düşünce columnların genişliği 100%*/
+            .column{
+                width: 100%;
+            }
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Header</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus error quidem iste esse voluptatibus facilis!</p>
+    </div>
+    <div class="nav">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </div>
+
+    <div class="row"> <!--sayfanın orta kısmı için genel div.-->
+        <div class="column sidebar">
+            <h1>Side</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, officiis error odit voluptate vero necessitatibus hic fuga quaerat quibusdam odio! Vitae ipsam sunt, est quod facilis qui unde eligendi autem?</p>
+
+        </div>
+        <div class="column main">
+            <h1>Main</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed officia expedita maxime accusamus magni beatae ipsum alias inventore vero? Odit, eius mollitia. Eveniet illum delectus facilis quisquam voluptas sint iure maxime aperiam repudiandae illo. Eum, tempora libero quibusdam laudantium consequuntur voluptates vel eaque. Aspernatur recusandae cupiditate doloremque, exercitationem quam quibusdam alias eum temporibus tenetur iusto 
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed officia expedita maxime accusamus magni beatae ipsum alias inventore vero? Odit, eius mollitia. Eveniet illum delectus facilis quisquam voluptas sint iure maxime aperiam repudiandae illo. Eum, tempora libero quibusdam laudantium consequuntur voluptates vel eaque. Aspernatur recusandae cupiditate doloremque, exercitationem quam quibusdam alias eum temporibus tenetur iusto 
+            </p>
+        </div>
+        <div class="column sidebar">
+            <h1>Side</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, officiis error odit voluptate vero necessitatibus hic fuga quaerat quibusdam odio! Vitae ipsam sunt, est quod facilis qui unde eligendi autem?</p>
+        </div>
+    </div> 
+    <!--row classlı genel divde float:left kullandık ve arkasından temizlik yapmamız lazım akışı kes row::after ile yaptık-->
+    <div class="footer">
+        <h1>Footer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus consequatur qui et a, cupiditate ipsa! Blanditiis hic quod iste earum harum libero sunt natus dignissimos! Sunt molestiae inventore non labore?</p>
+    </div>
+
+
+</body>
+</html>

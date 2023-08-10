@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            padding: 25px;
+            background-color: white;
+            text-align: center;
+        }
+        body{
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav{
+            background-color: black;
+            overflow: hidden; /*navbarda genelde kullanılır.*/
+        }
+
+        .nav a{
+            padding: 15px 17px;
+            float: left;
+            text-decoration: none;     /*linklerin altındaki çizgiyi kaldırır*/
+            color:white;
+            
+        }
+        .nav a:hover{
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        .sol{
+            float: left;
+            width: 75%;
+        }
+        .sag{
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+
+        }
+        .fakeimg{
+            background-color: gray;
+            padding: 30px;
+            margin-top: 5px;
+        }
+        .row::after{ /*rowdaki float leftin etkisinden kurtulmazsan footer aşağı satıra inmez.*/
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            background-color: gray;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        @media screen and (max-width:800px){
+            .sag{
+                width: 100%;
+            }
+            .sol{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus recusandae, eaque numquam ipsam quod fugiat.</p>
+    </div>
+    <div class="nav">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#" style="float: right;">link</a>
+    </div>
+
+    <div class="row"> <!--content kısmındaki herşeyi kapsayacak genel bir div-->
+        <div class="sol"> <!--sayfanın solundaki cardlar-->
+            <div class="card">
+                <h2>title heading</h2>
+                <h5>desc date</h5>
+                <div class="fakeimg" style="height: 200px; ">Image</div>
+                <p>some text...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores architecto quibusdam, quo numquam ipsam maxime dignissimos eos magnam enim doloremque natus? Dolore at nostrum nihil alias doloremque soluta, dolores, quod necessitatibus assumenda illo optio placeat ipsum ex dolor quisquam sed illum praesentium esse cum rerum tempora incidunt non natus. Asperiores temporibus ab fuga, sint vero iste accusamus optio voluptas accusantium nihil quam dolore praesentium eum assumenda aspernatur eius saepe labore unde nostrum similique. Voluptatem, placeat?</p>
+            </div>
+            <div class="card">
+                <h2>title heading</h2>
+                <h5>desc date</h5>
+                <div class="fakeimg" style="height: 200px; ">Image</div>
+                <p>some text...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores architecto quibusdam, quo numquam ipsam maxime dignissimos eos magnam enim doloremque natus? Dolore at nostrum nihil alias doloremque soluta, dolores, quod necessitatibus assumenda illo optio placeat ipsum ex dolor quisquam sed illum praesentium esse cum rerum tempora incidunt non natus. Asperiores temporibus ab fuga, sint vero iste accusamus optio voluptas accusantium nihil quam dolore praesentium eum assumenda aspernatur eius saepe labore unde nostrum similique. Voluptatem, placeat?</p>
+            </div>
+        </div>
+        <div class="sag">
+            <div class="card">
+                <h2>About me</h2>
+                <div class="fakeimg" style="height: 200px;"></div>
+                <p>some text..ddddddddddddd</p>
+            </div>
+            <div class="card">
+                <h3>Popular posts</h3>
+                <div class="fakeimg" ></div>
+                <div class="fakeimg"></div>
+                <div class="fakeimg"></div>
+            </div>
+            <div class="card">
+                <h3>Follow me!</h3>
+                <p>some text....</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+
+    </div>
+
+</body>
+</html>
