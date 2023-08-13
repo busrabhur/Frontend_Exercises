@@ -1,0 +1,9 @@
+.error{
+    color:blue;
+    background-color: aqua;
+    border:1px dashed red;
+}
+.success{
+    color:green;
+    border: 2px solid palevioletred;
+}
