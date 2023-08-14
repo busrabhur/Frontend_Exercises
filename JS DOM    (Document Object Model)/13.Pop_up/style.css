@@ -1,0 +1,32 @@
+.main-popup{
+    background:rgba(0, 0, 0, 0.5);
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;/*ilk başta görünmeyecek.Js le butona tıklandığında popupu açacağız*/
+}
+
+.popup{
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 300px;
+    padding: 30px;
+    background-color: white;
+    position: relative;
+}
+.popup a{
+    background-color: red;
+    color: white;
+    padding: 7px 11px;
+    text-decoration: none;
+}
+.popup-close{
+    position:absolute;
+    top: 4px;
+    right: 7px;
+    cursor: pointer;/**üzerine gelince el işareti*/
+}
